@@ -6,18 +6,10 @@
 
 lst = [9,8,4,3,5,6,7,3,5,9,0,2,3,8,7,5,8,9,6,7,3,2,7,5,6]
 # lst = [1,6,2,5,2,9,6,1,5]
-qt = 0
-num = 0
-lgth = len(lst)
 list1 = []
-while qt <=2 and num < lgth:
-    for i in lst:
-        if i == lst[num]:
-            qt += 1
-        else:
-            continue
-    if qt == 1:
-        list1.append(lst[num])
-    qt = 0
-    num+=1
+for i in lst:
+    if lst.count(i) < 2:
+        list1.append(i)
+    else:
+        continue
 print(list1)
