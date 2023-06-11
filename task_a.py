@@ -12,9 +12,8 @@ for i in lst:
     min = i
   elif max <= i:
     max = i
-print("max = ", max)
-print("min = ", min)
-for i in lst:
   if i % 3 == 0 and i % 5 != 0:
     digits.append(i)
+print("max = ", max)
+print("min = ", min)
 print(digits)
