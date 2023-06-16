@@ -3,11 +3,11 @@
 В СЛУЧАЕ, ЕСЛИ СПИСКИ НЕ ОДИНАКОВЫ ПО ДЛИНЕ, ВЫДАТЬ СООБЩЕНИЕ О ТОМ,
 ЧТО КОМУ-ТО НЕ ДОСТАНЕТСЯ АВТОМОБИЛЬ'''
 
-autos = [a for a in input().split()]
+cars = [c for c in input().split()]
 names = [n for n in input().split()]
 names.sort()
-autos.sort()
-match = list(zip(names,autos))
+cars.sort()
+match = list(zip(names,cars))
 print(match)
-if len(names)>len(autos):
+if len(names)>len(cars):
     print("sold out")
