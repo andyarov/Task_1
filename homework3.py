@@ -15,13 +15,15 @@ print(srt())
 Ответ: (1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)'''
 dgts = [1, 2, 3]
 rslt = []
-while len(rslt) < factorial(len(dgts)):
-    lst = random.sample(dgts, len(dgts))
-    tpl = tuple(lst)
-    if tpl not in rslt:
-        rslt.append((tpl))
+def permutations_without_itertools(dgts,rslt):
+    while len(rslt) < factorial(len(dgts)):
+        lst = sample(dgts, len(dgts))
+        tpl = tuple(lst)
+        if tpl not in rslt:
+            rslt.append((tpl))
 
-print(sorted(rslt))
+    print(sorted(rslt))
+permutations_without_itertools(dgts,rslt)
 '''3. Изучите функцию permutations из itertools.
 Напишите программу выводящую все возможные варианты для списка [1,2,3]
 '''
