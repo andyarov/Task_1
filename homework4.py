@@ -19,7 +19,6 @@ class Transformer:
 
     def decimal_to_roman(self, decimal_number):
         # converts decimal numerals to roman
-        # this function can't work with values 4 and 9
         tallies_2 = {"IV": 4, "IX": 9, "XL": 40, "XC": 90, "CD": 400, "CM": 900}
         self.tallies.update(tallies_2)
         result = ""
