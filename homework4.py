@@ -31,27 +31,3 @@ class Transformer:
 number = Transformer()
 print(number.decimal_to_roman(4494))
 print(number.roman_to_decimal("MMMMCDXCIV"))
-
-
-# converts decimal numerals to roman
-# this function can work with values 4 but not with 9
-'''def decimal_to_roman(decimal_number):
-    result = ""
-    lst = list(sorted(tallies.items(), key=lambda item: item[1], reverse=True))
-    for key, value in lst:
-        int_from_div = decimal_number // value
-        print(int_from_div)
-        if int_from_div < 0:
-            continue
-        elif int_from_div == 4 and key != "M":
-            for i in range(len(lst)):
-                if lst[i][0] == key:
-                    result[:-1]
-                    result += key + lst[i-1][0]
-                    decimal_number -= value * int_from_div
-        else:
-            result += key*int_from_div
-            decimal_number -= value*int_from_div
-    return result
-
-print(decimal_to_roman(494))'''
