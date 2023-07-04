@@ -36,12 +36,12 @@ print(number.roman_to_decimal("MMMMMCDLXXX"))
 # this function can work with values 4 and 9
 '''def decimal_to_roman(decimal_number):
     result = ""
+    keys = list(tallies.keys())
     for letter, value in list(sorted(tallies.items(), key=lambda item: item[1], reverse=True)):
         int_from_div = decimal_number // value
         if int_from_div <0:
             continue
         elif int_from_div == 4 and letter != "M":
-            keys = list(tallies.keys())
             for i in range(len(keys)):
                 if keys[i] == letter:
                     result += letter+keys[i+1]
