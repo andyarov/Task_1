@@ -34,7 +34,7 @@ print(number.roman_to_decimal("MMMMCDXCIV"))
 
 
 # converts decimal numerals to roman
-# this function can work with values 4
+# this function can work with values 4 but not with 9
 '''def decimal_to_roman(decimal_number):
     result = ""
     lst = list(sorted(tallies.items(), key=lambda item: item[1], reverse=True))
