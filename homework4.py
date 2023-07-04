@@ -29,7 +29,7 @@ class Transformer:
 
 number = Transformer()
 print(number.decimal_to_roman(4494))
-print(number.roman_to_decimal("MMMMCDXKIV"))
+print(number.roman_to_decimal("MMMMCDXLIV"))
 
 
 # converts decimal numerals to roman
