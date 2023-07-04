@@ -13,7 +13,7 @@ class Transformer:
             if self.tallies[left] < self.tallies[right]:
                 sum -= self.tallies[left]
             else:
-                sum += self.tallies[right]
+                sum += self.tallies[left]
         sum += self.tallies[roman_number[-1]]
         return sum
 
