@@ -28,7 +28,7 @@ class Transformer:
         return result
 
 number = Transformer()
-print(number.decimal_to_roman(5480))
+print(number.decimal_to_roman(4949))
 print(number.roman_to_decimal("MMMMMCDLXXX"))
 
 
@@ -40,7 +40,7 @@ print(number.roman_to_decimal("MMMMMCDLXXX"))
         int_from_div = decimal_number // value
         if int_from_div <0:
             continue
-        elif int_from_div == 4 and letter != "M" or int_from_div == 9 and letter != "M":
+        elif int_from_div == 4 and letter != "M":
             keys = list(tallies.keys())
             for i in range(len(keys)):
                 if keys[i] == letter:
