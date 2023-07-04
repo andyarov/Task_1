@@ -28,8 +28,8 @@ class Transformer:
         return result
 
 number = Transformer()
-print(number.decimal_to_roman(5480))
-print(number.roman_to_decimal("MMMMMCDLXXX"))
+print(number.decimal_to_roman(4494))
+print(number.roman_to_decimal("MMMMCDXKIV"))
 
 
 # converts decimal numerals to roman
