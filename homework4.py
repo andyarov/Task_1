@@ -20,6 +20,8 @@ class Transformer:
     def decimal_to_roman(self, decimal_number):
         # converts decimal numerals to roman
         # this function can't work with values 4 and 9
+        tallies_2 = {"IV": 4, "IX": 9, "XL": 40, "XC": 90, "CD": 400, "CM": 900}
+        self.tallies.update(tallies_2)
         result = ""
         for key, value in list(sorted(self.tallies.items(), key=lambda item: item[1], reverse=True)):
             while decimal_number >= value:
@@ -29,7 +31,7 @@ class Transformer:
 
 number = Transformer()
 print(number.decimal_to_roman(4494))
-print(number.roman_to_decimal("MMMMCDXLIV"))
+print(number.roman_to_decimal("MMMMCDXCIV"))
 
 
 # converts decimal numerals to roman
