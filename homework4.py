@@ -33,22 +33,24 @@ print(number.roman_to_decimal("MMMMMCDLXXX"))
 
 
 # converts decimal numerals to roman
-# this function can work with values 4 and 9
+# this function can work with values 4
 '''def decimal_to_roman(decimal_number):
     result = ""
-    keys = list(tallies.keys())
-    for letter, value in list(sorted(tallies.items(), key=lambda item: item[1], reverse=True)):
+    lst = list(sorted(tallies.items(), key=lambda item: item[1], reverse=True))
+    for key, value in lst:
         int_from_div = decimal_number // value
-        if int_from_div <0:
+        print(int_from_div)
+        if int_from_div < 0:
             continue
-        elif int_from_div == 4 and letter != "M":
-            for i in range(len(keys)):
-                if keys[i] == letter:
-                    result += letter+keys[i+1]
+        elif int_from_div == 4 and key != "M":
+            for i in range(len(lst)):
+                if lst[i][0] == key:
+                    result[:-1]
+                    result += key + lst[i-1][0]
                     decimal_number -= value * int_from_div
         else:
-            result += letter*int_from_div
+            result += key*int_from_div
             decimal_number -= value*int_from_div
     return result
 
-print(decimal_to_roman(5480))'''
+print(decimal_to_roman(494))'''
